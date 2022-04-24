@@ -1,0 +1,102 @@
+git config --global user.name Gaurav
+git config --global user.email gaurav@gmail.com
+
+//to initialize folder to git repo
+git init 
+
+// to show hidden folders
+ls -lart 
+
+// to get the status of repo
+git status
+
+// to add file to stagged 
+git add 'fileName'  // press tab to auto complete
+
+// now to commit first commit is called initial commit and imp to track files
+git commit
+
+//after commit enter commit msg and press esc key + ':wq' to exit
+
+//to make blank files in through git use
+touch filename.html
+
+//to add multiple untracked files to stagging area
+git add -A
+
+//to commit with message 
+git commit -m "message"
+
+//to get your file data back from last commit
+git checkout filename.html
+
+//to match all files with previous commit
+git checkout -f
+
+// to get details of commits
+git log
+
+// to see last n numbers of commits
+git log -p -n // n is number
+
+// press q to quit from above command
+
+// to compare working area with stagging area
+git diff
+
+// to compare stagging area with last commit
+git diff --staged
+
+// to skip stagging area and directly commit all files use
+git commit -a -m "skipped staged areaa"
+
+// to list all files
+ls
+
+// to delete a file completely but it should be in working tree
+git rm file.html
+
+// to remove file from stagging area
+git rm --cached file.html
+
+//brief status
+git status -s
+
+// make git ignore file and add files with extensions to git ignore that file(In all the folders with that name)
+// to ignore only that file give location like '/mylog.log'
+// to ignore all log files add like '*.log'
+// to ignore a directory 'folder\'
+touch .gitignore
+
+//to check all the branches
+git branch
+
+// create a new branch 
+git branch newbranchname
+
+// switch to other branch
+git checkout branchname
+
+// to merge a branch in master 
+1) go to master branch
+2) git merge branchname
+
+//make a  new branch and switch to that branch
+git checkout -b branchname
+
+// to add a remote repository , it will call this link as origin
+git remote add origin https://github.com/gauravsaini185/git.git 
+
+// to see the git repository
+git remote
+
+//it will give the urls from where to push and pull
+git remote -v
+
+//push the code to origin of master branch or any branch it will create new branch
+git push origin master
+
+//  to clone a repository
+git clone link folder_name(if u want your repo in a folder)
+
+
